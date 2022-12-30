@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="Restaurant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/18718c7391.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +34,11 @@
         <div class="div3">
             <h2><b>MENU</b></h2>
         </div>
-        <div id="parent">
+        <div class="container">
+        <div class="parent">
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa fa-arrow-left"></i></button> 
+            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(1)"><i class="fa fa-arrow-right"></i></button>
+            <div class="child-container">
             <div class="child">
                 <img class="img1" src="food1a.jpg">
             </div>
@@ -60,7 +66,81 @@
             <div class="child">
                 <img class="img1" src="food10a.jpg">
             </div>
+            </div>
+        </div>
         </div>
     </section>
+    <section>
+        <h3 align="right" class="text2">hvujhgufggfg</h3>
+        <h3 align="left" class="text2">hgduygfwguyweqgjhqgvg</h3>
+        <div class="parent2">
+            <div class="child2">
+                <img class="images" src="f1.jpg" alt="BiBimbap">
+                <p class="t1">This Korean lunch-in-a-bowl mixes together a simple salad of rice, mixed vegetables, rice, beef, and egg, with sesame oil and a dollop of chili paste for seasoning.</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f2.jpg" alt="sundae">
+                <p class="t1">Sundae is a type of sausage, similar in content to blood pudding, with roots in Mongolian cuisine. "Real" sundae is pig intestine with a stuffing of cellophane noodles, vegetables, and meat</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f3.jpg" alt="Galbi">
+                <p class="t1">Galbi, which means "rib," can technically come from pork and even chicken, but when you just say "galbi" sans modifiers, you're talking about thick slabs of meat marinated in a mixture of soy sauce, chopped garlic, and sugar and grilled over a proper fire.</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f4.jpg" alt="Chuncheon dakgalbi">
+                <p class="t1">Chuncheon dakgalbi, in this dish chunks of chicken are marinated in a sauce of chili paste and other spices, and stir-fried in a large pan with tteok, cabbage, carrots and slices of sweet potato.</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f5.jpg" alt="Tteokbokki">
+                <p class="t1">Tteokbokki, this iconic red-orange street food is so popular there's an entire town in Seoul just devoted to the steamed and sliced rice cakes (tteok), cooked with fish cakes (oden) and scallions in a sweet and spicy sauce made of chili paste.</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f6.jpg" alt="Samgyeopsal">
+                <p class="t1">Samgyeopsal is served with lettuce, perilla leaves, sliced onions and raw garlic kimchi, the sizzling pork strips are smudged in ssamjang (a mix of soybean paste called 'doenjang' and chili paste called 'gochujang') or salt and pepper in sesame oil.</p>
+            </div>
+            <div class="child2">
+                <img class="images" src="f7.jpg" alt="Army Stew">
+                <p class="t1">Army Stew, this hodgepodge stew of sausages, Spam, American cheese, instant noodles, tteok and assorted vegetables dates back to the aftermath of the Korean War.
+Because meat was scarce, cooks found creative replacements in the surplus foods from the American army base in Seoul, hence the stew's name.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let currentscrollposition=0;
+        let scrollamount=320;
+
+        const c= document.querySelector(".child-container");
+        const p=document.querySelector(".parent");
+    
+        const btnScrollleft = document.querySelector("#btn-scroll-left");
+        const btnScrollright = document.querySelector("#btn-scroll-right");
+
+        btnScrollleft.style.opacity = "0";
+
+        let maxScroll = -c.offsetWidth + p.offsetWidth ;
+
+        function scrollHorizontally(val){
+            currentscrollposition += (val + scrollamount);
+
+            if(currentscrollposition >= 0) {
+                currentscrollposition = 0;
+                btnScrollleft.style.opacity = "0";
+            }
+            else{
+                btnScrollleft.style.opacity = "1";
+            }
+
+            if (currentscrollposition <= maxScroll){
+                currentscrollposition = maxScroll;
+                btnScrollright.style.opacity = "0";
+            }
+            else{
+                btnScrollleft.style.opacity = "1";
+            }
+
+            c.style.left = currentscrollposition + "px";
+        }
+
+    </script>
 </body>
 </html>
