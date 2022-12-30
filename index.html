@@ -34,11 +34,7 @@
         <div class="div3">
             <h2><b>MENU</b></h2>
         </div>
-        <div class="container">
-        <div class="parent">
-            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa fa-arrow-left"></i></button> 
-            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(1)"><i class="fa fa-arrow-right"></i></button>
-            <div class="child-container">
+        <div id="parent">
             <div class="child">
                 <img class="img1" src="food1a.jpg">
             </div>
@@ -66,14 +62,12 @@
             <div class="child">
                 <img class="img1" src="food10a.jpg">
             </div>
-            </div>
-        </div>
         </div>
     </section>
     <section>
-        <h3 align="right" class="text2">hvujhgufggfg</h3>
-        <h3 align="left" class="text2">hgduygfwguyweqgjhqgvg</h3>
-        <div class="parent2">
+        <h3 class="text2"></h3>
+        <h3 class="text3"></h3>
+        <div id="parent2">
             <div class="child2">
                 <img class="images" src="f1.jpg" alt="BiBimbap">
                 <p class="t1">This Korean lunch-in-a-bowl mixes together a simple salad of rice, mixed vegetables, rice, beef, and egg, with sesame oil and a dollop of chili paste for seasoning.</p>
@@ -105,42 +99,5 @@ Because meat was scarce, cooks found creative replacements in the surplus foods 
             </div>
         </div>
     </section>
-    <script>
-        let currentscrollposition=0;
-        let scrollamount=320;
-
-        const c= document.querySelector(".child-container");
-        const p=document.querySelector(".parent");
-    
-        const btnScrollleft = document.querySelector("#btn-scroll-left");
-        const btnScrollright = document.querySelector("#btn-scroll-right");
-
-        btnScrollleft.style.opacity = "0";
-
-        let maxScroll = -c.offsetWidth + p.offsetWidth ;
-
-        function scrollHorizontally(val){
-            currentscrollposition += (val + scrollamount);
-
-            if(currentscrollposition >= 0) {
-                currentscrollposition = 0;
-                btnScrollleft.style.opacity = "0";
-            }
-            else{
-                btnScrollleft.style.opacity = "1";
-            }
-
-            if (currentscrollposition <= maxScroll){
-                currentscrollposition = maxScroll;
-                btnScrollright.style.opacity = "0";
-            }
-            else{
-                btnScrollleft.style.opacity = "1";
-            }
-
-            c.style.left = currentscrollposition + "px";
-        }
-
-    </script>
 </body>
 </html>

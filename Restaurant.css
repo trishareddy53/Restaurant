@@ -49,72 +49,34 @@ header {
     border: 100px;
     font-size: larger;
 }
-.text2{
-    border: 5px;
-}
-.container {
+#parent{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    height: 100vh;
-}
-.parent{
-    display: flex;
-    /* width: 600px;
-    height: 80px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden; */
 }
 .child {
     width: 400px;
     border-radius: 100%;
     margin: 15px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.child-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    transition: 0.5s all ease-out;
 }
 .img1 {
     width: 200px;
     border-radius: 100%;
     border-color: transparent;
 }
-.btn-scroll{
-    background-color: #fff;
-    color: #999;
-    box-shadow: 0 0 10px #999;
-    padding: 5px 8px;
-    border:0;
-    border-radius: 50%;
-    margin: 0 5px;
-    z-index: 1;
-    cursor: pointer;
-    transition: 1s;
-}
-
 #parent2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .child2 {
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 380px;
     flex-direction: row;
     border-radius: 20px;
-    margin: auto;
+    justify-content: space-between;
+    margin: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .images {
@@ -123,5 +85,20 @@ header {
 }
 .t1{
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text2{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    /* justify-content: right; */
+    margin-right: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.text3{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 72%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
