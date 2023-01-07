@@ -24,26 +24,25 @@ header {
     display: flex;
     margin: auto;
 }
+section {
+    margin: auto;
+}
 .sec1 {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin: 0px;
-    padding: 5%;
     color: #0a1520;
+    margin: auto;
+    margin-top: 80px;
+    padding: 5%;
     margin-top: 30px;
     margin-bottom: 0px;
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .sec2{
-    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
-    margin: 0px;
-    margin-bottom: 0px;
-}
-.sec3{
-    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);    
-    margin: 0px;
-    margin-bottom: 0px;
+    background: rgb(140,221,221);
+    background: linear-gradient(90deg, rgba(140,221,221,1) 0%, rgba(164,230,228,1) 13%, rgba(244,208,246,1) 67%, rgba(244,207,238,1) 90%);
+    margin: auto;
 }
 .div1 {
     margin-left: 300px;
