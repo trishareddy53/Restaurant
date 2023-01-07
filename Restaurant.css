@@ -28,24 +28,30 @@ header {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin: auto;
+    margin: 0;
     padding: 5%;
     color: #0a1520;
     margin-top: 30px;
-    background: rgb(239,238,244);
-    background: linear-gradient(90deg, rgba(239,238,244,1) 0%, rgba(178,225,233,1) 19%, rgba(208,246,246,1) 31%, rgba(204,229,235,1) 100%);
+    margin-bottom: 0;
+    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .sec2{
-    background: rgb(140,221,221);
-    background: linear-gradient(90deg, rgba(140,221,221,1) 0%, rgba(164,230,228,1) 13%, rgba(244,208,246,1) 67%, rgba(244,207,238,1) 90%);
+    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
+    margin: 0;
+    margin-bottom: 0;
 }
-/* .sec3{
-    
-} */
+.sec3{
+    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);    
+    margin: 0;
+    margin-bottom: 0;
+}
 .div1 {
     margin-left: 300px;
     box-shadow: 5px;
     text-align: center;
+}
+.div2{
+    box-shadow: 5px 10px #888888;
 }
 .div3{
     margin-left: 100px;
@@ -78,15 +84,18 @@ header {
     justify-content: center;
     align-items: center;
     margin: auto;
+    gap: 10px;
 }
 .child2 {
     width: 450px;
-    height: 380px;
+    height: 400px;
     flex-direction: row;
     border-radius: 20px;
     justify-content: space-between;
     margin: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 .images {
     width: 100%;
@@ -102,34 +111,43 @@ header {
     border-radius: 5px;
     /* justify-content: right; */
     margin-left: 90%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 .text3{
     width: 1000px;
     height: 50px;
     border-radius: 5px;
     margin-right: 90%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 .text4{
     width: 500px;
     height: 50px;
     border-radius: 0px;
     margin-left: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 .text5{
     width: 480px;
     height: 300px;
     border-radius: 0px;
     margin-left: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 .sec4{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin: auto;
+    margin: 0;
+    margin-bottom: 0;
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .container {
@@ -139,6 +157,7 @@ header {
     margin: 30px;
     margin-right: 0;
     margin-top: 60px;
+    
   }
   .box {
     width: 100%;
@@ -147,7 +166,7 @@ header {
     bottom: 0;
     right: 0;
     opacity: 1;
-    background:#000;
+    background:rgb(179, 178, 178);
   }
   .overlay {
     z-index: 9;
