@@ -146,8 +146,8 @@ header {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin: 0;
-    margin-bottom: 0;
+    margin: 0px;
+    margin-bottom: 0px;
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .container {
@@ -155,7 +155,7 @@ header {
     height: 450px;
     position: relative;
     margin: 30px;
-    margin-right: 0;
+    margin-right: 0px;
     margin-top: 60px;
     
   }
