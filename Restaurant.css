@@ -25,35 +25,25 @@ header {
     display: flex;
     margin: auto;
 }
-section {
-    margin: auto;
-}
 .sec1 {
     display: flex;
     justify-content:space-between;
     align-items:center;
     color: #0a1520;
-    margin: auto;
+    padding: 2%;
     margin-top: 80px;
-    padding: 5%;
-    margin-top: 30px;
     margin-bottom: 0px;
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .sec2{
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
     margin: auto;
-}
-.sec3{
-    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
+    padding: 3%;
 }
 .div1 {
     margin-left: 300px;
     box-shadow: 5px;
     text-align: center;
-}
-.div2{
-    box-shadow: 5px 10px #888888;
 }
 .div3{
     margin-left: 100px;
@@ -66,15 +56,19 @@ section {
     border: 100px;
     font-size: larger;
 }
-#parent{
-    display: flex;
-}
 .child {
     width: 400px;
     border-radius: 100%;
-    margin: 15px;
-    justify-content: space-between;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid black;
+}
+#parent {
+    width: auto;
+    display:flex;
+    overflow-x:scroll;
+    gap: 100px;
+}
+#parent::-webkit-scrollbar {
+    display: none;
 }
 .img1 {
     width: 200px;
@@ -87,6 +81,21 @@ section {
     align-items: center;
     margin: auto;
     gap: 10px;
+}
+.sec{
+    display: flex;
+    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
+}
+.sec3{
+    width: auto;
+    display: flex;
+    overflow-x: scroll;
+    gap: 100px;
+    background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
+    padding: 3%;
+}
+.sec3::-webkit-scrollbar {
+    display: none;
 }
 .child2 {
     width: 450px;
@@ -111,8 +120,8 @@ section {
     width: 1000px;
     height: 58px;
     border-radius: 5px;
-    /* justify-content: right; */
-    margin-left: 90%;
+    margin-top: 50px;
+    margin-left: 685px;
     border: 5px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
@@ -121,7 +130,8 @@ section {
     width: 1000px;
     height: 58px;
     border-radius: 5px;
-    margin-right: 90%;
+    margin-bottom: 50px;
+    margin-right: 600px;
     border: 5px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
@@ -156,37 +166,38 @@ section {
     box-shadow: 5px 10px #888888;
 }
 .text7{
-    width: 1000px;
+    width: 850px;
     height: 58px;
     border-radius: 5px;
-    margin-left: 20%;
+    margin-left: 150px;
     margin-top: 60px;
     border: 5px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
-}.text8{
-    width: 1000px;
+}
+.text8{
+    width: 950px;
     height: 58px;
     border-radius: 5px;
-    margin-left: 10%;
+    margin-left: 50px;
     border: 5px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
 }
 .text9{
-    width: 1000px;
+    width: 500px;
     height: 58px;
     border-radius: 5px;
-    margin-left: 60%;
+    margin-left: 500px;
     border: 5px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
 }
 .text10{
-    width: 1000px;
+    width: 700px;
     height: 58px;
     border-radius: 5px;
-    margin-left: 40%;
+    margin-left: 300px;
     margin-bottom: 60px;
     border: 5px solid;
     padding: 10px;
@@ -198,6 +209,7 @@ section {
     align-items:center;
     margin: 0px;
     margin-bottom: 0px;
+    padding: 3%;
     background-image: linear-gradient(to right top, #ffffff, #e9e7ff, #d0d0ff, #b3baff, #91a5ff, #91a5ff, #91a5ff, #91a5ff, #b3baff, #d0d0ff, #e9e7ff, #ffffff);
 }
 .container {
@@ -205,7 +217,7 @@ section {
     height: 450px;
     position: relative;
     margin: 30px;
-    margin-right: 0px;
+    margin-right: 40px;
     margin-top: 60px;
     
   }
@@ -223,6 +235,27 @@ section {
     margin: 10px;
     background: #fff;
   }
+  .menu{
+    border: 4px solid black;
+    height: 50px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .requirements{
+    border: 4px solid black;
+    height: 100px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .additionals{
+    border: 4px solid black;
+    height: 150px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
   .button1{
     margin-left: 50px;
   }
@@ -237,8 +270,46 @@ section {
 
 footer{
     background-color:#0a1520;
-    padding:4%;
     display: flex;
-    justify-content:space-between;
+    justify-content: flex-start;
+}
+.f1{
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 350px;
+    height: 30px;
+}
+.f{
+    border: 2px solid white;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 10px;
+    height: 150px;
+}
+.f2{
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 40px;
+    width: 300px;
+    height: 100px;
+}
+.f3{
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 50px;
+    width: 300px;
+    height: 20px;
+}
+.f4{
+    border: 2px solid white;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 550px;
+    width: 300px;
+    height: 150px;
 }
 
